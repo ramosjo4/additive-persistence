@@ -33,14 +33,12 @@ fun main(args: Array<String>){
 
         root = base[0]+base[1]+base[3]+base[2]
 
-        //placeholder until figured out
-
         println("The additive root is: " + root  + "\nThe persistence is: " + persistence)
     }
     //for bigger value
     else {
-        //placeholder until figured out
-        println("3 3")
+
+        println("The additive root is: " + root  + "\nThe persistence is: " + persistence)
     }
 
 
