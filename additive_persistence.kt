@@ -12,7 +12,8 @@ fun main(args: Array<String>){
     var num = readLine()!!.toInt()
     var persistence = 0
     var root = 0
-
+    var i = 0
+    var base[10]
 
     if(num < 0 ){
         println("Error, please enter a number greater than 0")
@@ -24,7 +25,8 @@ fun main(args: Array<String>){
 
     //for small value
     else if (num < 10000){
-        for(int i = 0; i<4; i++){
+        while(i < 50){
+            i++
             base[i] = num % 10
             num = num/10
         }
@@ -32,7 +34,8 @@ fun main(args: Array<String>){
         root = base[0]+base[1]+base[3]+base[2]
 
         //placeholder until figured out
-        println("2 1")
+
+        println("The additive root is: " + root  + "\nThe persistence is: " + persistence)
     }
     //for bigger value
     else {
